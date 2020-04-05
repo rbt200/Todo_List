@@ -9,18 +9,25 @@
 import SwiftUI
 
 struct TodoScreen: View {
-    var todos: [Todo] = []
+    
+    //listener
+    @ObservedObject var todoStore = TodoStore()
+    
     @State private var nextTodo: Todo = Todo()
+    
     var body: some View {
         NavigationView {
             VStack {
-                List(todos) { todo in
+                List(todoStore.todos) { todo in
                     TodoRow(todo: todo)
                 }
                 Form {
                     TextField("Enter title", text: $nextTodo.title)
                     TextField("Enter description", text: $nextTodo.description)
-                    Button(action:{}, label: {Text("ADD")})
+                    Button(action:{
+                        self.todoStore.todos.append(self.nextTodo)
+                        self.nextTodo = Todo()
+                    }, label: {Text("ADD")})
                 }
             }
             .navigationBarTitle(Text("Todo List"))
@@ -42,9 +49,6 @@ struct TodoRow: View {
 
 struct TodoScreen_Previews: PreviewProvider {
     static var previews: some View {
-        TodoScreen(todos: [
-        Todo(title: "First Todo", description:  "This is the first todo task."),
-        Todo(title: "Second Todo", description:  "This is the second todo task.")
-        ])
+        TodoScreen()
     }
 }

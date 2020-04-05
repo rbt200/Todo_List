@@ -15,6 +15,7 @@
 		E626D1572439098F0008B8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E626D1552439098F0008B8AC /* LaunchScreen.storyboard */; };
 		E626D16024390B400008B8AC /* TodoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D15F24390B400008B8AC /* TodoScreen.swift */; };
 		E626D16324390B690008B8AC /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D16224390B690008B8AC /* Todo.swift */; };
+		E626D1662439F47A0008B8AC /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D1652439F47A0008B8AC /* TodoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E626D1582439098F0008B8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E626D15F24390B400008B8AC /* TodoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoScreen.swift; sourceTree = "<group>"; };
 		E626D16224390B690008B8AC /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		E626D1652439F47A0008B8AC /* TodoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		E626D1492439098C0008B8AC /* Todo_List */ = {
 			isa = PBXGroup;
 			children = (
+				E626D1642439F4530008B8AC /* Store */,
 				E626D16124390B580008B8AC /* Model */,
 				E626D15E24390B250008B8AC /* Screens */,
 				E626D14A2439098C0008B8AC /* AppDelegate.swift */,
@@ -95,6 +98,14 @@
 				E626D16224390B690008B8AC /* Todo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E626D1642439F4530008B8AC /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				E626D1652439F47A0008B8AC /* TodoStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 				E626D14D2439098C0008B8AC /* SceneDelegate.swift in Sources */,
 				E626D14F2439098C0008B8AC /* ContentView.swift in Sources */,
 				E626D16324390B690008B8AC /* Todo.swift in Sources */,
+				E626D1662439F47A0008B8AC /* TodoStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
