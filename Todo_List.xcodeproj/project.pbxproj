@@ -16,6 +16,9 @@
 		E626D16024390B400008B8AC /* TodoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D15F24390B400008B8AC /* TodoScreen.swift */; };
 		E626D16324390B690008B8AC /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D16224390B690008B8AC /* Todo.swift */; };
 		E626D1662439F47A0008B8AC /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D1652439F47A0008B8AC /* TodoStore.swift */; };
+		E626D1682439FF210008B8AC /* CondensedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D1672439FF210008B8AC /* CondensedScreen.swift */; };
+		E626D16A243A1D080008B8AC /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D169243A1D080008B8AC /* StoreManager.swift */; };
+		E626D16C243A1F7E0008B8AC /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D16B243A1F7E0008B8AC /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		E626D15F24390B400008B8AC /* TodoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoScreen.swift; sourceTree = "<group>"; };
 		E626D16224390B690008B8AC /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		E626D1652439F47A0008B8AC /* TodoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
+		E626D1672439FF210008B8AC /* CondensedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondensedScreen.swift; sourceTree = "<group>"; };
+		E626D169243A1D080008B8AC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		E626D16B243A1F7E0008B8AC /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				E626D15F24390B400008B8AC /* TodoScreen.swift */,
+				E626D1672439FF210008B8AC /* CondensedScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -104,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				E626D1652439F47A0008B8AC /* TodoStore.swift */,
+				E626D169243A1D080008B8AC /* StoreManager.swift */,
+				E626D16B243A1F7E0008B8AC /* UserData.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -182,7 +191,10 @@
 				E626D14B2439098C0008B8AC /* AppDelegate.swift in Sources */,
 				E626D16024390B400008B8AC /* TodoScreen.swift in Sources */,
 				E626D14D2439098C0008B8AC /* SceneDelegate.swift in Sources */,
+				E626D16C243A1F7E0008B8AC /* UserData.swift in Sources */,
+				E626D1682439FF210008B8AC /* CondensedScreen.swift in Sources */,
 				E626D14F2439098C0008B8AC /* ContentView.swift in Sources */,
+				E626D16A243A1D080008B8AC /* StoreManager.swift in Sources */,
 				E626D16324390B690008B8AC /* Todo.swift in Sources */,
 				E626D1662439F47A0008B8AC /* TodoStore.swift in Sources */,
 			);

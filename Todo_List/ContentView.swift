@@ -9,8 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var selection = 0
+    
     var body: some View {
-        TodoScreen()
+        TabView(selection: $selection) {
+            TodoScreen()
+                .tabItem {
+                    Text("Todos")     
+            }
+            .tag(0)
+            CondensedScreen()
+                .tabItem {
+                    Text("Condensed")
+            }
+            .tag(1)
+        }
     }
 }
 

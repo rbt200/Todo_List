@@ -10,8 +10,9 @@ import SwiftUI
 
 struct TodoScreen: View {
     
-    //listener
-    @ObservedObject var todoStore = TodoStore()
+    //@ObservedObject var todoStore = TodoStore()
+    //listener singleton
+    @ObservedObject var todoStore = StoreManager.instance.todoStore
     
     @State private var nextTodo: Todo = Todo()
     
